@@ -23,9 +23,9 @@ module.exports = {
         "warnOnUnsupportedTypeScriptVersion": false
     },
     "ignorePatterns": [".eslintrc.cjs", "dist", "vite.config.ts", "commitlint.config.cjs", ".prettierrc"],
-    "plugins": ["simple-import-sort"],
+    // "plugins": ["simple-import-sort"],
     "rules": {
-        "simple-import-sort/imports": "error",
+        // "simple-import-sort/imports": "error",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/space-before-function-paren": "off",
         "semi": "off",
