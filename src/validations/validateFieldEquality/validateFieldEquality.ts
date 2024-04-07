@@ -5,7 +5,7 @@ export function validateFieldEquality(
 ): boolean {
   // Verifica si los tipos de los valores son iguales
   if (typeof value1 !== typeof value2) {
-    throw new Error('Los tipos de los valores no coinciden')
+    return false
   }
 
   if (typeof value1 === 'object' && typeof value2 === 'object') {

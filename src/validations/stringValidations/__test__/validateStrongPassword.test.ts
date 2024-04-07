@@ -15,7 +15,8 @@ describe('validateStrongPassword', () => {
     [undefined, false],
     [{}, false],
     [0, false],
-    [true, false]
+    [true, false],
+    [false, false]
   ])('validateStrongPassword(%j) should be %j', (password, expected) => {
     // TODO: Consultar la resolución de este error
     // @ts-expect-error should accept any value

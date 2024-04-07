@@ -9,7 +9,9 @@ describe('isPositiveNumber', () => {
     ['abc', false],
     ['', false],
     [null, false],
-    [undefined, false]
+    [undefined, false],
+    [false, false],
+    [isNaN, false]
   ])('isPositiveNumber(%j) should be %j', (arg, expected) => {
     // TODO: Consultar la resolución de este error
     // @ts-expect-error should accept any value

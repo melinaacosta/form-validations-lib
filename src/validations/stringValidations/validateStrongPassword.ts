@@ -6,7 +6,7 @@ export function validateStrongPassword(password: string): boolean {
   }
 
   // Al menos 8 caracteres
-  if (password.length < 8) {
+  if (password.length <= 8) {
     return false
   }
   // Al menos una letra minúscula

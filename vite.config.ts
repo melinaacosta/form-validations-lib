@@ -19,8 +19,7 @@ export default defineConfig({
       '@': resolve(__dirname, '/src')
     }
   },
-  plugins: [dts({ outDir: 'dist', include: ['src/'] }), tsconfigPaths()],
-  // @ts-expect-error test types are not defined
+  plugins: [dts({ outDir: "dist", include: ["src/"],exclude:["**/__tests__/**"] }), tsconfigPaths()],
   test: {
     globals: true
   }
