@@ -25,6 +25,7 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest --watch",
     "test:mutation": "stryker run",
+    "yalc:publish": "npm run build && yalc publish",
     "ts-coverage": "typescript-coverage-report"
   },
   "devDependencies": {
