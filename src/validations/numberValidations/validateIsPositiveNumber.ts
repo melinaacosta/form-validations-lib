@@ -3,8 +3,5 @@ export function isPositiveNumber(number: number): boolean {
   if (typeof number !== 'number' || isNaN(number)) {
     return false
   }
-  if (typeof number !== 'number' && isNaN(number)) {
-    return false
-  }
   return number > 0
 }
