@@ -19,13 +19,16 @@ module.exports = {
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "warnOnUnsupportedTypeScriptVersion": false
     },
     "ignorePatterns": [".eslintrc.cjs", "dist", "vite.config.ts", "commitlint.config.cjs", ".prettierrc"],
     "plugins": ["simple-import-sort"],
     "rules": {
         "simple-import-sort/imports": "error",
         "@typescript-eslint/no-explicit-any": "error",
-        "@typescript-eslint/space-before-function-paren": "off"
+        "@typescript-eslint/space-before-function-paren": "off",
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
     }
 }

@@ -1,0 +1,18 @@
+import { describe, expect, test } from 'vitest'
+import { isPositiveNumber } from '../validateIsPositiveNumber'
+
+describe('isPositiveNumber', () => {
+  test.each([
+    [5, true],
+    [-2, false],
+    [0, false],
+    ['abc', false],
+    ['', false],
+    [null, false],
+    [undefined, false]
+  ])('isPositiveNumber(%j) should be %j', (arg, expected) => {
+    // TODO: Consultar la resolución de este error
+    // @ts-expect-error should accept any value
+    expect(isPositiveNumber(arg)).toBe(expected)
+  })
+})
