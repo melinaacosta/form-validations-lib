@@ -9,7 +9,7 @@ describe('validateFormatDate', () => {
     ['', false],
     [null, false],
     [undefined, false],
-    [{}, false],
+    [{}, false]
   ])('validateFormatDate(%j) should be %j', (arg, expected) => {
     // @ts-expect-error should accept any value
     expect(validateFormatDate(arg)).toBe(expected)
