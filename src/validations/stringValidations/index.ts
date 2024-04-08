@@ -1,2 +1,2 @@
-export * from './validateStringLength'
-export * from './validateStrongPassword'
+export * from './stringLength';
+export * from './strongPassword';

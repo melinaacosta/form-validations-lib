@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest'
-import { validateInteger } from '../validateInteger'
+import { isInteger } from '../isInteger'
 
-describe('validateInteger', () => {
+describe('isInteger', () => {
   test.each([
     [5, true],
     [-2, true],
@@ -13,9 +13,8 @@ describe('validateInteger', () => {
     [null, false],
     [undefined, false],
     [{}, false]
-  ])('validateInteger(%j) should be %j', (arg, expected) => {
-    // TODO: Consultar la resolución de este error
+  ])('Integer(%j) should be %j', (arg, expected) => {
     // @ts-expect-error should accept any value
-    expect(validateInteger(arg)).toBe(expected)
+    expect(isInteger(arg)).toBe(expected)
   })
 })

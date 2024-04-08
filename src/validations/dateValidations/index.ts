@@ -1,1 +1,1 @@
-export * from './validateFormatDate'
+export * from './formatDate'

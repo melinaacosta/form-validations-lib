@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest'
-import { validateFieldEquality } from '../validateFieldEquality'
+import { fieldEquality } from '../fieldEquality'
 
-describe('validateFieldEquality', () => {
+describe('fieldEquality', () => {
   test.each([
     { value1: 'abc', value2: 'abc', expected: true },
     { value1: 123, value2: 123, expected: true },
@@ -18,9 +18,9 @@ describe('validateFieldEquality', () => {
     { value1: [1, 2, 3], value2: [1, 2, 3], expected: true },
     { value1: [1, 2, 3], value2: [3, 2, 1], expected: false }
   ])(
-    'validateFieldEquality($value1, $value2) should be $expected',
+    'fieldEquality($value1, $value2) should be $expected',
     ({ value1, value2, expected }) => {
-      expect(validateFieldEquality(value1, value2)).toBe(expected)
+      expect(fieldEquality(value1, value2)).toBe(expected)
     }
   )
 })

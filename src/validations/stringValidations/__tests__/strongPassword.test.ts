@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest'
-import { validateStrongPassword } from '../validateStrongPassword'
+import { strongPassword } from '../strongPassword'
 
-describe('validateStrongPassword', () => {
+describe('strongPassword', () => {
   test.each([
     ['Abcdef12$', true], // Contraseña válida
     ['abc123', false], // Falta letra mayúscula
@@ -17,9 +17,9 @@ describe('validateStrongPassword', () => {
     [0, false],
     [true, false],
     [false, false]
-  ])('validateStrongPassword(%j) should be %j', (password, expected) => {
+  ])('strongPassword(%j) should be %j', (password, expected) => {
     // TODO: Consultar la resolución de este error
     // @ts-expect-error should accept any value
-    expect(validateStrongPassword(password)).toBe(expected)
+    expect(strongPassword(password)).toBe(expected)
   })
 })

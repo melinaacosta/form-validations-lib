@@ -1,5 +1,5 @@
 // Función para validar si una contraseña es lo suficientemente fuerte
-export function validateStrongPassword(password: string): boolean {
+export function strongPassword(password: string): boolean {
   // Verificar si la contraseña es indefinida o nula
   if (password === undefined || password === null) {
     return false

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { roundDecimal } from '../validateRoundDecimal'
+import { roundDecimal } from '../roundDecimal'
 
 describe('roundDecimal', () => {
   test.each([

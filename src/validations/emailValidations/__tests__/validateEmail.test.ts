@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest'
-import { validateEmail } from '../validateEmail'
+import { email } from '../email'
 
-describe('validateEmail', () => {
+describe('email', () => {
   test.each([
     ['test@example.com', true], // Correo electrónico válido
     ['test@com', false], // Correo electrónico inválido (falta el dominio)
@@ -12,9 +12,9 @@ describe('validateEmail', () => {
     [null, false],
     [undefined, false],
     [{}, false]
-  ])('validateEmail(%j) should be %j', (arg, expected) => {
+  ])('email(%j) should be %j', (arg, expected) => {
     // TODO: Consultar la resolución de este error
     // @ts-expect-error should accept any value
-    expect(validateEmail(arg)).toBe(expected)
+    expect(email(arg)).toBe(expected)
   })
 })

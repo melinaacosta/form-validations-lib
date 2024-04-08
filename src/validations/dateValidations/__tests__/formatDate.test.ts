@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest'
-import { validateFormatDate } from '../validateFormatDate'
+import { formatDate } from '../formatDate'
 
-describe('validateFormatDate', () => {
+describe('formatDate', () => {
   test.each([
     ['2022-01-01', true], // Fecha válida en formato YYYY-MM-DD
     ['01-01-2023abc', false],
@@ -12,6 +12,6 @@ describe('validateFormatDate', () => {
     [{}, false]
   ])('validateFormatDate(%j) should be %j', (arg, expected) => {
     // @ts-expect-error should accept any value
-    expect(validateFormatDate(arg)).toBe(expected)
+    expect(formatDate(arg)).toBe(expected)
   })
 })

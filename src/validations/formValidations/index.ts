@@ -1,2 +1,2 @@
-export * from './validateFormIsEmpty'
-export * from './validateIsRequired'
+export * from './formIsEmpty'
+export * from './isRequired'
