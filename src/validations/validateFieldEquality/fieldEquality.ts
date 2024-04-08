@@ -1,5 +1,5 @@
 // Función que verifica si dos campos son iguales
-export function validateFieldEquality(
+export function fieldEquality(
   value1: string | number | boolean | object | null | undefined,
   value2: string | number | boolean | object | null | undefined
 ): boolean {

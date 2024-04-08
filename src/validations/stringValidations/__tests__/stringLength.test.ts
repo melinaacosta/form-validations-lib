@@ -1,7 +1,6 @@
 import { describe, expect, test } from 'vitest'
-import { validateStringLength } from '../validateStringLength'
 
-describe('validateStringLength', () => {
+describe('stringLength', () => {
   test.each([
     ['abcdef', 2, 6, true], // Cadena dentro del rango
     ['abc', 2, 6, true], // Cadena justo en el mínimo
@@ -15,11 +14,11 @@ describe('validateStringLength', () => {
     [0, 2, 6, false],
     [true, 2, 6, false]
   ])(
-    'validateStringLength(%j, %i, %i) should be %j',
+    'stringLength(%j, %i, %i) should be %j',
     (str, minLength, maxLength, expected) => {
       // TODO: Consultar la resolución de este error
       // @ts-expect-error should accept any value
-      expect(validateStringLength(str, minLength, maxLength)).toBe(expected)
+      expect(stringLength(str, minLength, maxLength)).toBe(expected)
     }
   )
 })

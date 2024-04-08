@@ -1,1 +1,1 @@
-export * from './validateFieldEquality'
+export * from './fieldEquality'

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { isPositiveNumber } from '../validateIsPositiveNumber'
+import { isPositiveNumber } from '../isPositiveNumber'
 
 describe('isPositiveNumber', () => {
   test.each([

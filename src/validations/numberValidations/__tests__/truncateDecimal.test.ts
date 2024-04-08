@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { truncateDecimal } from '../validateTruncateDecimal'
+import { truncateDecimal } from '../truncateDecimal'
 
 describe('truncateDecimal', () => {
   test.each([

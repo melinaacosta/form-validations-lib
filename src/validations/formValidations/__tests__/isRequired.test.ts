@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { isRequired } from '../validateIsRequired'
+import { isRequired } from '../isRequired'
 
 describe('isRequired', () => {
   test.each([

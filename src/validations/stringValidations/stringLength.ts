@@ -1,4 +1,4 @@
-export function validateStringLength(
+export function stringLength(
   str: string,
   minLength: number,
   maxLength: number
