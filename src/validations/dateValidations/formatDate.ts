@@ -1,5 +1,6 @@
+import { DATE_FORMAT_REGEX } from '@/constants/date'
+
 // Función para validar una fecha en formato YYYY-MM-DD
 export function formatDate(date: string): boolean {
-  const re = /^\d{4}-\d{2}-\d{2}$/
-  return re.test(date)
+  return DATE_FORMAT_REGEX.test(date)
 }
