@@ -1,2 +1,2 @@
-export * from './stringLength';
-export * from './strongPassword';
+export * from './stringLength'
+export * from './strongPassword'
