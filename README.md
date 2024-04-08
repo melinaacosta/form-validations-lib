@@ -15,4 +15,4 @@
 Para instalar la librería en tu proyecto, simplemente ejecuta el siguiente comando:
 
 ```bash
-npm install my-lib
+npm install form-validations-library
