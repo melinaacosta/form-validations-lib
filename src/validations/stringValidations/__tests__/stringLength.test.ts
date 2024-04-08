@@ -1,4 +1,5 @@
 import { describe, expect, test } from 'vitest'
+import { stringLength } from '../stringLength'
 
 describe('stringLength', () => {
   test.each([
